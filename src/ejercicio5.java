@@ -10,19 +10,26 @@ public class ejercicio5 {
 
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        //Declaramos las variables
         String frase = "";
         String palabra = "";
 
-        while (!palabra.toLowerCase().equals("fin")) {
+        //Declaramos el scanner
+        Scanner sc = new Scanner(System.in);
+
+        //Mientras que la palabra introducida sea distinta de "fin"
+        while (!palabra.equalsIgnoreCase("fin")) {
+            //Le pedimos al usuario una palabra
             System.out.print("Introduce una palabra: ");
             palabra = sc.next();
 
-            if (!palabra.toLowerCase().equals("fin")) {
+            //Si la palabra es distinta de fin la añadimos a la variable frase
+            if (!palabra.equalsIgnoreCase("fin")) {
                 frase += palabra + " ";
             }
         }
 
+        //Imprimimos por consola la frase completa y le quitamos los espacios en blanco innecesarios
         System.out.println("La frase completa es: " + frase.trim());
 
         //Cerramos el scanner

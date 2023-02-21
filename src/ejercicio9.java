@@ -16,18 +16,15 @@ public class ejercicio9 {
      */
 
 
-    static final char[] CONJUNTO_1 = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'};
-    static final char[] CONJUNTO_2 = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
-
-
     public static void main(String[] args) {
 
         //Declaramos las variables
         String frase;
         String fraseCodificada = "";
-        char c;
+        final char[] CONJUNTO_1 = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'};
+        final char[] CONJUNTO_2 = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
 
-        //Declaramos las varibels para poder leer por consola
+        //Declaramos las variables para poder leer por consola
         Scanner sc = new Scanner(System.in);
 
         //Le pedimos al usuario que introduzca una frase
@@ -38,6 +35,14 @@ public class ejercicio9 {
     }
 
     static char codifica(char[] conjunto1, char[] conjunto2, char c) {
+
+        String frase, fraseCodificada;
+
+        for (int i = 0; i < conjunto1.length; i++) {
+
+
+        }
+
         return c;
     }
 }

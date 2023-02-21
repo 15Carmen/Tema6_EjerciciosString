@@ -31,9 +31,9 @@ public class ejercicio7 {
     }
 
     /**
-     * Metodo que invierte
-     * @param frase que es introducida por teclado por el usuario
-     * @return la frase escrita al revés
+     * Metodo que invierte la
+     * @param frase que es introducida por teclado por el usuario.
+     * @return la frase escrita al revés.
      */
     static String invertirFrase(String frase) {
 

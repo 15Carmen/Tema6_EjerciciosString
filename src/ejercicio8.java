@@ -24,29 +24,59 @@ public class ejercicio8 {
         System.out.println("Introduzca una frase: ");
         frase = sc.nextLine();
 
-        //Buscamos las posiciones de las coletillas características del idioma
-        posColetillaPrincipio = frase.indexOf("Javalín, javalón");
-        posColetillaFinal = frase.indexOf("javalén, len, len");
-
-        //Si encuentra las coletillas en la frase, se eliminan los espacios innecesarios de la frase y se traduce
-        if (posColetillaPrincipio >= 0){
+        if (esJavalandia(frase)) {  //Si la frase está escrita en el idioma de Javalandia mostramos la traducción
             System.out.println("La frase esta escrita en el idioma de Javalandia");
-            frase.trim();
-            fraseTraducida = frase.substring(17);
-
-            System.out.println("La frase traducida es: " + fraseTraducida);
-        } else if (posColetillaFinal >= 0) {
-            System.out.println("La frase esta escrita en el idioma de Javalandia");
-            frase.trim();
-            fraseTraducida = frase.substring(0,posColetillaFinal);
-
-            System.out.println("La frase traducida es:" + fraseTraducida);
-        }else { //Si no encuentra las coletillas en la frase, indica que la frase no está escrita en el idioma de Javalandia
+            System.out.println("La frase traducida es: " + traduccion(frase));
+        } else {                    //Si no, lo indicamos por consola
             System.out.println("La frase no esta en el idioma de Javalandia");
         }
 
         //Cerramos el scanner
         sc.close();
+    }
+
+    /**
+     * Metodo que comprueba si
+     * @param frase está o no escrita en el idioma de Javalandia.
+     * @return false si no está en el idioma de Javalandia y true si está en el idioma de Javalandia
+     */
+    static boolean esJavalandia(String frase) {
+        //Declaramos las variables
+        boolean esIdioma = false;
+
+        //Si la frase empieza o termina por las coletillas especificadas en el enunciado
+        if (frase.startsWith("Javalín, javalón") || frase.endsWith("javalén, len, len")) {
+            esIdioma = true;  //Indicamos que la frase está en el idioma de Javalandia
+        }
+
+        return esIdioma;
+    }
+
+    /**
+     * Método que traduce la
+     * @param frase si está en el idioma de Javalandia
+     * @return la frase traducida
+     */
+    static String traduccion(String frase) {
+
+        //Declaramso las variables
+        String fraseTraducida = "";
+        int posColetillaFinal = frase.indexOf("javalén, len, len");
+
+        if (frase.startsWith("Javalín, javalón")) {          //Si la frase empieza por "Javalín, javalón"
+            //Hacemos una subcadena que le quite la coletilla
+            fraseTraducida = frase.substring(17);
+            //Le quitamos los espacios en blanco innecesarios
+            fraseTraducida = fraseTraducida.trim();
+
+        } else if (frase.endsWith("javalén, len, len")) {   //Si la frase termina por "javalén, len, len"
+            //Hacemos una subcadena que le quite la coletilla
+            fraseTraducida = frase.substring(0, posColetillaFinal);
+            //Le quitamos los espacios en blanco innecesarios
+            fraseTraducida = fraseTraducida.trim();
+        }
+
+        return fraseTraducida;
     }
 
 }
