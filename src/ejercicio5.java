@@ -10,13 +10,13 @@ public class ejercicio5 {
 
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String frase = "";
         String palabra = "";
 
         while (!palabra.toLowerCase().equals("fin")) {
             System.out.print("Introduce una palabra: ");
-            palabra = input.next();
+            palabra = sc.next();
 
             if (!palabra.toLowerCase().equals("fin")) {
                 frase += palabra + " ";
@@ -24,5 +24,8 @@ public class ejercicio5 {
         }
 
         System.out.println("La frase completa es: " + frase.trim());
+
+        //Cerramos el scanner
+        sc.close();
     }
 }

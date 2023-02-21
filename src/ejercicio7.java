@@ -25,6 +25,9 @@ public class ejercicio7 {
         } else { //Si no, no es palíndroma
             System.out.println("La frase es palindroma");
         }
+
+        //Cerramos el scanner
+        sc.close();
     }
 
     /**

@@ -34,6 +34,7 @@ public class ejercicio6 {
             System.out.println("No se ha encontrado la palabra introducida en la frase");
         }
 
-
+        //Cerramos el scanner
+        sc.close();
     }
 }
