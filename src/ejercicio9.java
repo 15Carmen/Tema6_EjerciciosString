@@ -19,8 +19,8 @@ public class ejercicio9 {
     public static void main(String[] args) {
 
         //Declaramos las variables
-        String frase;
-        String fraseCodificada = "";
+        String frase, fraseCodificada = "";
+        char letraFrase;
         final char[] CONJUNTO_1 = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'};
         final char[] CONJUNTO_2 = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
 
@@ -31,18 +31,35 @@ public class ejercicio9 {
         System.out.println("Introduzca una frase");
         frase = sc.next();
 
+        //Para no tener problemas con las letras mayúsculas, pasamos toda la frase a minúsculas
+        frase = frase.toLowerCase();
+
+        //Recorremos toda la frase
+        for (int i = 0; i < frase.length(); i++) {
+            //Guardamos cada letra de la frase en una variable
+            letraFrase = frase.charAt(i);
+
+            //La letra codificada la introducimos en la variable fraseCodifica
+            fraseCodificada +=  codifica(CONJUNTO_1, CONJUNTO_2, letraFrase);
+
+        }
+
+        //Imprimimos la frase codificada por consola
+        System.out.println(fraseCodificada);
+
+        //Cerramos el scanner
+        sc.close();
 
     }
 
     static char codifica(char[] conjunto1, char[] conjunto2, char c) {
 
-        String frase, fraseCodificada;
-
         for (int i = 0; i < conjunto1.length; i++) {
-
-
+            if (c == conjunto1[i]){
+                c = conjunto2[i];
+                break;
+            }
         }
-
         return c;
     }
 }

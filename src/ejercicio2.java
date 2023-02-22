@@ -33,6 +33,12 @@ public class ejercicio2 {
         sc.close();
     }
 
+    /**
+     * Método que compara las longitudes de
+     * @param passwordUser y de
+     * @param passwordPlayer y si tienen la misma longitud, verifica si la letras son iguales
+     * Si no lo son imprime un asterisco.
+     */
     static void passwordLength(String passwordUser, String passwordPlayer){
 
         for (int i = 0; i < passwordUser.length(); i++) {
