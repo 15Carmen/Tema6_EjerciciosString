@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicio5 {
+public class ejercicio05 {
     /**
      * Introducir por teclado una frase palabra a palabra, y mostrar la frase completa separando las palabras
      * introducidas con espacios en blanco. Terminar de leer la frase cuando alguna de las palabras introducidas

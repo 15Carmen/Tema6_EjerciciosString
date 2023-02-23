@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicio2 {
+public class ejercicio02 {
     /**
      * Diseña el juego “Acierta la contraseña”. La mecánica del juego es la siguiente: el primer jugador introduce la
      * contraseña; a continuación, el segundo jugador debe teclear palabras hasta que la acierte. El juego debe indicar
