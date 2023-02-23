@@ -64,10 +64,12 @@ public class ejercicio13 {
      * @return true si está repetida, false si no lo está
      */
     public static boolean repetida(char[] letras, int indice) {
+        //Declaramos las variables
         boolean repetida = false;
         int cont=0;
 
-        while(!repetida && cont<indice && indice != 0) {
+        //Mientras no esté repetida, el contador sea menor que el índice y el índice sea distinto de 0, comprobamos si la letra está repetida
+        while(!repetida && cont<indice) {
             repetida = letras[cont] == letras[indice] ? true : false;
             cont++;
         }
