@@ -1,4 +1,4 @@
-public class ejercicio4 {
+public class ejercicio04 {
     /**
      * Diseñar una función a la que se le pase una cadena de caracteres y la devuelva invertida. Un ejemplo,
      * la cadena “Hola mundo” quedaría “odnum aloH”. Recuerda probar la función en un main.

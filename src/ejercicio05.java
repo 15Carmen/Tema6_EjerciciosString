@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicio5 {
+public class ejercicio05 {
     /**
      * Introducir por teclado una frase palabra a palabra, y mostrar la frase completa separando las palabras
      * introducidas con espacios en blanco. Terminar de leer la frase cuando alguna de las palabras introducidas
@@ -10,19 +10,29 @@ public class ejercicio5 {
 
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        //Declaramos las variables
         String frase = "";
         String palabra = "";
 
-        while (!palabra.toLowerCase().equals("fin")) {
-            System.out.print("Introduce una palabra: ");
-            palabra = input.next();
+        //Declaramos el scanner
+        Scanner sc = new Scanner(System.in);
 
-            if (!palabra.toLowerCase().equals("fin")) {
+        //Mientras que la palabra introducida sea distinta de "fin"
+        while (!palabra.equalsIgnoreCase("fin")) {
+            //Le pedimos al usuario una palabra
+            System.out.print("Introduce una palabra: ");
+            palabra = sc.next();
+
+            //Si la palabra es distinta de fin la añadimos a la variable frase
+            if (!palabra.equalsIgnoreCase("fin")) {
                 frase += palabra + " ";
             }
         }
 
+        //Imprimimos por consola la frase completa y le quitamos los espacios en blanco innecesarios
         System.out.println("La frase completa es: " + frase.trim());
+
+        //Cerramos el scanner
+        sc.close();
     }
 }

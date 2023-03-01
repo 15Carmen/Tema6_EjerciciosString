@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class ejercicio2 {
+public class ejercicio02 {
     /**
      * Diseña el juego “Acierta la contraseña”. La mecánica del juego es la siguiente: el primer jugador introduce la
      * contraseña; a continuación, el segundo jugador debe teclear palabras hasta que la acierte. El juego debe indicar
      * si la palabra introducida es mayor o menor alfabéticamente que la contraseña.
      *
-     * TODO: VERSIÓN AVANZADA. El juego, en vez de indicar si la palabra es mayor o menor alfabéticamente que la contraseña,
-     *  debe mostrar una cadena con los caracteres acertados en sus lugares respectivos y asteriscos en los no acertados.
+     * VERSIÓN AVANZADA. El juego, en vez de indicar si la palabra es mayor o menor alfabéticamente que la contraseña,
+     * debe mostrar una cadena con los caracteres acertados en sus lugares respectivos y asteriscos en los no acertados.
      *
      */
     public static void main(String[] args) {
@@ -23,7 +23,9 @@ public class ejercicio2 {
         do {
             System.out.println("Introduzca una password Player: ");
             passwordPlayer = sc.nextLine();
+
             passwordLength(passwordUser,passwordPlayer);
+
         }while (!passwordUser.equals(passwordPlayer));
 
         System.out.println("ENHORABUENA! Acertaste la password");
@@ -31,14 +33,21 @@ public class ejercicio2 {
         sc.close();
     }
 
+    /**
+     * Método que compara las longitudes de
+     * @param passwordUser y de
+     * @param passwordPlayer y si tienen la misma longitud, verifica si la letras son iguales
+     * Si no lo son imprime un asterisco.
+     */
     static void passwordLength(String passwordUser, String passwordPlayer){
 
-        if (passwordUser.length() > passwordPlayer.length()){
-            System.out.println("La user password es mas larga que la introducida");
-        }else if (passwordUser.length()<passwordPlayer.length()){
-            System.out.println("La user password es mas corta que la introducida");
-        }else {
-            System.out.println("Las dos password miden lo mismo");
+        for (int i = 0; i < passwordUser.length(); i++) {
+            if (i < passwordPlayer.length() && passwordUser.charAt(i) == passwordPlayer.charAt(i)){
+                System.out.print(passwordUser.charAt(i));
+            }else {
+                System.out.print("*");
+            }
         }
+        System.out.println();
     }
 }
