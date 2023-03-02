@@ -29,7 +29,7 @@ public class ejercicio14 {
         palabra = sc.next();
 
         //Desordenamos la palabra y la guardamos en una variable anagrama
-        anagrama = desordena(palabra);
+        anagrama = desordenarPalabra(palabra);
 
         //Le pedimos al jugador 2 que adivine la palabra
         System.out.println("Jugador 2, intente adivinar la palabra del jugador 1: ");
@@ -61,15 +61,15 @@ public class ejercicio14 {
      * @param palabra que es una cadena de caracteres
      * @return
      */
-    public static String desordena(String palabra) {
+    public static String desordenarPalabra(String palabra) {
 
         //Declaramos las variables
         char[] cadena = palabra.toCharArray();              //Convertimos la palabra pasado por parámetro en un array de caracteres
         char[] cadenaDesordenada = new char[cadena.length]; //Creamos un array de caracteres con la misma longitud que el array de caracteres anterior
-        int[] usados = new int[0];                           //Creamos un array de enteros que contendrá los índices de los caracteres que ya hemos usado
+        int[] usados = new int[0];                          //Creamos un array de enteros que contendrá los índices de los caracteres que ya hemos usado
         int indice;
 
-        //Recorremos el array de caracteres
+        //Recorremos el array de caracteres de la palabra
         for (int i = 0; i < cadena.length; i++) {
 
             //Mientras el índice que hemos generado aleatoriamente esté en el array de índices usados, generamos otro índice

@@ -25,7 +25,7 @@ public class ejercicio15 {
         palabra = sc.next();
 
         //Desordenamos la palabra y la guardamos en una variable anagrama
-        anagrama = ejercicio14.desordena(palabra);
+        anagrama = ejercicio14.desordenarPalabra(palabra);
 
         //Hacemos una copia del array oculto con la longitud de la palabra introducida por parámetros
         oculto = Arrays.copyOf(oculto, palabra.length());
