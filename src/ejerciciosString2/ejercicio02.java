@@ -39,15 +39,16 @@ public class ejercicio02 {
                         <meta charset="utf-8">
                     </head>
                     <body>
-                        <h1>""" + titulo;
+                        <h1>""";
+                html+=titulo;
                 html += """
-                       </h1>
-                                <p>""" + contenido;
+                        </h1>
+                                <p>""";
+                html += contenido;
                 html += """
                     </p>
                         </body>
-                    </html>
-                    """;
+                    </html>""";
         return html;
     }
 }
