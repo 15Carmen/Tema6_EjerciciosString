@@ -11,7 +11,6 @@ public class ejercicio06 {
 
         //Declaramos las variables
         String frase, palabra;
-        int posicion = 0;
         int contador = 0;
 
         //Declaramos el scanner para poder leer por consola

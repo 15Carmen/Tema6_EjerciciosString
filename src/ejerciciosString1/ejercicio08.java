@@ -16,8 +16,7 @@ public class ejercicio08 {
     public static void main(String[] args) {
 
         //Declaramos las variables
-        String frase, fraseTraducida;
-        int posColetillaPrincipio, posColetillaFinal;
+        String frase;
 
         //Declaramos el scanner
         Scanner sc = new Scanner(System.in);
