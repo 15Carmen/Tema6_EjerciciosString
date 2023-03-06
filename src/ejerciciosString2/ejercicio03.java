@@ -14,6 +14,8 @@ public class ejercicio03 {
     public static void main(String[] args) {
         //Declaración de variables
         String frase;
+        String[] palabras;
+        String fraseCamel="";
 
         //Declaramos el scanner
         Scanner sc = new Scanner(System.in);
@@ -22,8 +24,19 @@ public class ejercicio03 {
         System.out.println("Introduzca una frase: ");
         frase = sc.nextLine();
 
-        //Ponemos la frase en minúsculas
-        frase = frase.toLowerCase();
+        //Introducimos la frase en un array de palabras
+        palabras = frase.split(" ");
+
+        //Recorremos el array de palabras y vamos concatenando las palabras en camel
+        for (String palabra : palabras) {
+            //Introducimos en la variable fraseCamel la primera letra de la palabra en mayúscula y el resto en minúscula
+            fraseCamel += palabra.substring(0, 1).toUpperCase() + palabra.substring(1).toLowerCase();
+        }
+
+        //Imprimimos por consola la frase en camel
+        System.out.println(fraseCamel);
+
+
 
     }
 }
