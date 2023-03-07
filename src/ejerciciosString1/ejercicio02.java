@@ -1,3 +1,5 @@
+package ejerciciosString1;
+
 import java.util.Scanner;
 
 public class ejercicio02 {
@@ -15,21 +17,28 @@ public class ejercicio02 {
         //Declaramos las variables
         String passwordUser, passwordPlayer;
 
+        //Declaramos el scanner
         Scanner sc = new Scanner(System.in);
 
+        //Le pedimos al usuario que introduzca una contraseña
         System.out.println("User, introduce la password: ");
         passwordUser = sc.nextLine();
 
+        //Mientras que la contraseña de Player sea distinta a la de User
         do {
+            //Le pedimos a player una contraseña
             System.out.println("Introduzca una password Player: ");
             passwordPlayer = sc.nextLine();
 
+            //Comparamos las dos contraseñas
             passwordLength(passwordUser,passwordPlayer);
 
         }while (!passwordUser.equals(passwordPlayer));
 
+        //Cuando adivine la contraseña, mostramos un mensaje de felicitación
         System.out.println("ENHORABUENA! Acertaste la password");
 
+        //Cerramos el scanner
         sc.close();
     }
 
@@ -41,10 +50,12 @@ public class ejercicio02 {
      */
     static void passwordLength(String passwordUser, String passwordPlayer){
 
+        //Recorremos la contraseña de User
         for (int i = 0; i < passwordUser.length(); i++) {
+            //Si i es menor que la longitud de la palabra de User y la letra de la contraseña de User es igual a la de Player
             if (i < passwordPlayer.length() && passwordUser.charAt(i) == passwordPlayer.charAt(i)){
-                System.out.print(passwordUser.charAt(i));
-            }else {
+                System.out.print(passwordUser.charAt(i));   //Imprimimos la letra de la contraseña de User
+            }else { //Si no, imprimimos un asterisco
                 System.out.print("*");
             }
         }

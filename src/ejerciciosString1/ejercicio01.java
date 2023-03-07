@@ -1,3 +1,5 @@
+package ejerciciosString1;
+
 import java.util.Scanner;
 
 public class ejercicio01 {
@@ -13,19 +15,21 @@ public class ejercicio01 {
         //Declaramos el scanner
         Scanner sc = new Scanner(System.in);
 
+        //Le pedimos al usuario que introduzca 2 frases
         System.out.println("Introduce una frase:");
         frase1 = sc.nextLine();
         System.out.println("Introduce otra frase:");
         frase2 = sc.nextLine();
 
-        if (frase1.length() > frase2.length()){
+        if (frase1.length() > frase2.length()){     //Si la frase1 es mayor que la 2, 2 es más corta
             System.out.println("La segunda frase es más corta");
-        }else if (frase1.length()<frase2.length()){
+        }else if (frase1.length()<frase2.length()){ //Si la frase1 es menor que la 2, 2 es más larga
             System.out.println("La primera frase es mas corta");
-        }else {
+        }else {                                     //Si no es ninguno de los casos anteriores, las frases miden lo mismo
             System.out.println("Las dos frase miden lo mismo");
         }
 
+        //Cerramos el scanner
         sc.close();
 
     }

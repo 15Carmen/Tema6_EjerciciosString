@@ -1,3 +1,5 @@
+package ejerciciosString1;
+
 import java.util.Scanner;
 
 public class ejercicio09 {
@@ -52,12 +54,22 @@ public class ejercicio09 {
 
     }
 
+    /**
+     * Metodo que codifica
+     * @param c . Si c se encuentra entre los caracteres del
+     * @param conjunto1 , lo codificamos según los caracteres del
+     * @param conjunto2
+     * @return c codificado.
+     */
     static char codifica(char[] conjunto1, char[] conjunto2, char c) {
 
+        //Recorremos el primer array de caracteres
         for (int i = 0; i < conjunto1.length; i++) {
+            //Si c es igual que alguno de los caracteres del conjunto1
             if (c == conjunto1[i]){
+                //Indicamos que c es el carácter del conjunto2 de esa posición
                 c = conjunto2[i];
-                break;
+                break;  //Nos salimos del bucle
             }
         }
         return c;

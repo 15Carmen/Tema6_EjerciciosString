@@ -1,3 +1,5 @@
+package ejerciciosString1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -42,14 +44,18 @@ public class ejercicio12 {
      * @return true si son anagramas, false si no lo son
      */
     public static boolean esAnagrama(String palabra1, String palabra2) {
+
+        //Declaramos las variables
         boolean anagrama = false;
         char[] palabra1Char = palabra1.toCharArray();
         char[] palabra2Char = palabra2.toCharArray();
 
-
+        //Si las palabras tienen la misma longitud
         if (palabra1.length() == palabra2.length()) {
+            //Ordenamos los arrays
             Arrays.sort(palabra1Char);
             Arrays.sort(palabra2Char);
+            //Si los arrays son iguales, las palabras son anagramas
             if (Arrays.equals(palabra1Char, palabra2Char)) {
                 anagrama = true;
             }

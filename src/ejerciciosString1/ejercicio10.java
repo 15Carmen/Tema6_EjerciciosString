@@ -1,3 +1,5 @@
+package ejerciciosString1;
+
 import java.util.Scanner;
 
 public class ejercicio10 {
@@ -41,18 +43,21 @@ public class ejercicio10 {
 
 
     /**
-     * Metodo que decodifica el caracter introducido
+     * Metodo que decodifica
+     * @param c . Si c se encuentra entre los caracteres del
+     * @param conjunto2 , lo decodificamos según los caracteres del
      * @param conjunto1
-     * @param conjunto2
-     * @param c
-     * @return
+     * @return c decodificado.
      */
     static char decodifica(char[] conjunto1, char[] conjunto2, char c) {
 
+        //Recorremos el primer array de caracteres
         for (int i = 0; i < conjunto2.length; i++) {
+            //Si c es igual que alguno de los caracteres del conjunto2
             if (c == conjunto2[i]){
+                //Indicamos que c es el carácter del conjunto1 de esa posición
                 c = conjunto1[i];
-                break;
+                break;  //Nos salimos del bucle
             }
         }
         return c;

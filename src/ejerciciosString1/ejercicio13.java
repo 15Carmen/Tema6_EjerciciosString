@@ -1,3 +1,5 @@
+package ejerciciosString1;
+
 import java.util.Scanner;
 
 public class ejercicio13 {
@@ -17,7 +19,6 @@ public class ejercicio13 {
 
         //Decalramos las variables
         String frase;
-
 
         //Declaramos las variables para poder leer por consola
         Scanner sc = new Scanner(System.in);
@@ -68,9 +69,13 @@ public class ejercicio13 {
         boolean repetida = false;
         int cont=0;
 
-        //Mientras no esté repetida, el contador sea menor que el índice y el índice sea distinto de 0, comprobamos si la letra está repetida
+        //Mientras no esté repetida, el contador sea menor que el índice
         while(!repetida && cont<indice) {
-            repetida = letras[cont] == letras[indice] ? true : false;
+            //Si la letra de la posición cont es igual a la letra de la posición indice, repetida es true
+            if (letras[cont] == letras[indice]) {
+                repetida = true;
+            }
+            //Incrementamos el contador
             cont++;
         }
 
