@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio03 {
+public class Ejercicio03 {
     /**
      * Diseña una aplicación que pida al usuario que introduzca una frase por teclado e indique cuántos espacios
      * en blanco tiene.

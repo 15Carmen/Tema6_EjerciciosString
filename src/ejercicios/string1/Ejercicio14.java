@@ -1,9 +1,9 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ejercicio14 {
+public class Ejercicio14 {
     /**
      * Implementar el juego del anagrama, que consiste en que un jugador escribe una palabra o frase, y la aplicación
      * muestra un anagrama (transposición de los caracteres) del texto introducido generado al azar. A continuación

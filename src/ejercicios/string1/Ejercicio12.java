@@ -1,9 +1,9 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ejercicio12 {
+public class Ejercicio12 {
     /**
      * Un anagrama es una palabra, o frase, que resulta de la transposición de otra palabra o frase. Ejemplos de
      * anagramas para la palabra roma son: amor, ramo o mora. Construir un programa que solicite al usuario dos

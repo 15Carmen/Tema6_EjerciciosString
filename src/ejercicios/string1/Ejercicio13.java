@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio13 {
+public class Ejercicio13 {
     /**
      * Diseñar un algoritmo que lea del teclado una frase e indique, para las letras que aparecen en la frase, cuántas
      * veces se repite cada una. Se consideran iguales las letras mayúsculas y las minúsculas para realizar la cuenta.

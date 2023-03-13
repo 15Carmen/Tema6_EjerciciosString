@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio10 {
+public class Ejercicio10 {
     /**
      * Realizar un programa descodificador. La solución es tan sencilla como utilizar la función diseñada en el
      * ejercicio anterior intercambiando los conjuntos entre sí.

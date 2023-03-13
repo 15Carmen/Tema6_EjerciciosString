@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio09 {
+public class Ejercicio09 {
     /**
      * Disponemos de la siguiente relación de letras:
      * conjunto 1: e i k m p q r s t u v

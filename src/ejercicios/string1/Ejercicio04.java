@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio04 {
+public class Ejercicio04 {
     /**
      * Diseñar una función a la que se le pase una cadena de caracteres y la devuelva invertida. Un ejemplo,
      * la cadena “Hola mundo” quedaría “odnum aloH”. Recuerda probar la función en un main.

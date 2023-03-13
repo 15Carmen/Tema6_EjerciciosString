@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio07 {
+public class Ejercicio07 {
     /**
      * Realizar un programa que lea una frase del teclado y nos indique si es palíndroma, es decir, que la frase sea
      * igual leyendo de izquierda a derecha, que de derecha a izquierda, sin tener en cuenta los espacios. Un ejemplo

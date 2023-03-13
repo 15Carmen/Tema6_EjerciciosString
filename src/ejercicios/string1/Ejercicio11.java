@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio11 {
+public class Ejercicio11 {
     /**
      * Leer una frase y encontrar la palabra de mayor longitud. El programa debe imprimir tanto la palabra como el
      * número de caracteres de la misma.

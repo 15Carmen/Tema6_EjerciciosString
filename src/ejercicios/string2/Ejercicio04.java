@@ -1,9 +1,9 @@
-package ejerciciosString2;
+package ejercicios.string2;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ejercicio04 {
+public class Ejercicio04 {
     /**
      * Implementa un programa que lea una frase y muestre todas sus palabras ordenadas de forma alfabética.
      * Suponemos que cada palabra de la frase se separa de otra por un único espacio.

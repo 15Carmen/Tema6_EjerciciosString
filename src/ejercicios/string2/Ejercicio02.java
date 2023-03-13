@@ -1,8 +1,8 @@
-package ejerciciosString2;
+package ejercicios.string2;
 
 import java.util.Scanner;
 
-public class ejercicio02 {
+public class Ejercicio02 {
     /*
      * Escribe un programa que lea el título y el contenido de una página web. La aplicación generará por consola un
      * documento HTML donde el título será un encabezado de primer nivel (<h1>), y el resto del contenido será un

@@ -1,8 +1,8 @@
-package ejerciciosString2;
+package ejercicios.string2;
 
 import java.util.Scanner;
 
-public class ejercicio05 {
+public class Ejercicio05 {
     /**
      * Construir un programa que convierta una palabra leída de teclado en secuencias de n letras. El valor n también
      * se debe pedir al usuario por teclado. Por ejemplo, la palabra “destornillador”, dividida en secuencias de 4

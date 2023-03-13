@@ -1,8 +1,8 @@
-package ejerciciosString2;
+package ejercicios.string2;
 
 import java.util.Scanner;
 
-public class ejercicio03 {
+public class Ejercicio03 {
 
     /**
      * Escribe una aplicación que convierte una frase (que puede estar escrita con cualquier combinación de mayúsculas

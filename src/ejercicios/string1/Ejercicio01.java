@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio01 {
+public class Ejercicio01 {
     /**
      * Introducir por teclado dos frases e indicar cuál de ellas es la más corta, es decir, la que contiene
      * menos caracteres.

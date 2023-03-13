@@ -1,8 +1,8 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Scanner;
 
-public class ejercicio08 {
+public class Ejercicio08 {
     /**
      * Los habitantes de Javalandia tienen un idioma algo extraño; cuando hablan siempre comienzan sus frases con
      * “Javalín, javalón”, para después hacer una pausa más o menos larga (la pausa se representa mediante espacios

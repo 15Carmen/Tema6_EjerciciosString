@@ -1,9 +1,9 @@
-package ejerciciosString1;
+package ejercicios.string1;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ejercicio15 {
+public class Ejercicio15 {
     /**
      * Modificar el ejercicio anterior para que el programa indique al jugador 2, en cada intento, cuántas letras
      * coinciden con el texto original.
@@ -25,7 +25,7 @@ public class ejercicio15 {
         palabra = sc.next();
 
         //Desordenamos la palabra y la guardamos en una variable anagrama
-        anagrama = ejercicio14.desordenarPalabra(palabra);
+        anagrama = Ejercicio14.desordenarPalabra(palabra);
 
         //Hacemos una copia del array oculto con la longitud de la palabra introducida por parámetros
         oculto = Arrays.copyOf(oculto, palabra.length());
